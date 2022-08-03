@@ -1,0 +1,54 @@
+<div style="text-align: center; margin:30px 0px;">
+    <div class="container-fluid mt-3">
+        <div class="card">
+            <table>
+                <tr>
+                    <td>
+                        <div style="display: inline-flex; ">
+                            <img src="https://www.pngitem.com/pimgs/m/78-786293_1240-x-1240-0-avatar-profile-icon-png.png"
+                                width="200" height="200" class="rounded-circle">
+                        </div>
+                    </td>
+                    <td>
+                        <table style="text-align: left;">
+                            <tr>
+                                <td>
+                                    <h4 class="text-secondary display-6"><span
+                                            style="font-weight: bold;">{{user.username}}</span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 25px;"><span style="font-weight: bold; ">Email : </span>{{user.email}}</td>
+                            </tr>
+                            <tr>
+                                <td style="font-size: 25px;"><span style="font-weight: bold;">Phone : </span>{{user.phone_number}}</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr>
+    <div class="container row" style="display: inline-flex;">
+        <div class="col">
+            <button type="submit" class="btn btn-primary" (click)="viewAddresses()">View Address</button>
+        </div>
+        <div class="col">
+            <button type="submit" class="btn btn-primary" (click)="viewOrders()">View Orders</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" *ngIf="addressStatus" style="width: 80%; text-align: center;">
+    <h3>You haven't added any addresses yet. Please Add one below</h3>
+    <div style="width: 50%; margin: auto;">
+        <add-address></add-address>
+        <button type="submit" class="btn btn-primary" style="margin-top: 5px;" (click)="refresh()">Submit</button>
+    </div>
+</div>
+<div *ngIf="viewAdd && !addressStatus">
+    <list-address></list-address>
+</div>
+<div *ngIf="viewOrd">
+    <orders-user></orders-user>
+</div>

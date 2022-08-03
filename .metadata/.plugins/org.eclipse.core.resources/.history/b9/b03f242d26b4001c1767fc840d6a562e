@@ -1,0 +1,11 @@
+package src.main.java.com.ibm.entity;
+
+
+/** This class represents Order.
+ * 
+ * @author DEBARGHYA DUTTA
+ *
+ */
+public class Order {
+
+}

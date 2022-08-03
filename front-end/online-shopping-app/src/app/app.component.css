@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+.custom-btn:hover{
+	letter-spacing:3px;
+	transition:0.8 ease;
+}
+.head{
+    background-color: transparent;
+}
+.navbar-light .navbar-brand {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 1px 2px #000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link:hover {
+    color: #e91e63;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #e91e63;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;;
+    font-weight: bolder;
+    font-size: 19px;
+}
+.dropdown-menu {
+    padding: 0px;
+}
+span.navbar-toggler-icon {
+    background-image: url(https://i.ibb.co/1v9M0dZ/menu.png) !important;
+    width: 25px;
+    height: 25px;
+	cursor:pointer;
+}
+button.navbar-toggler:focus {
+    outline: none;
+}
+
+a.dropdown-item {
+    padding: 10px;
+    background: #515156;
+    color: #fff;
+}
+
+#footer { 
+    position: absolute;
+    padding-top: 20px;
+    width: 100%;
+}

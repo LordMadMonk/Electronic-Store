@@ -1,0 +1,71 @@
+Json data format for products:
+[
+{
+    "pid":100,
+    "pname":"Sony",
+    "stock":1000,
+    "price":83000.00,
+    "category":"Laptops"
+},
+{
+ "pid":101,
+    "pname":"Asus ROG Phone 6 Pro",
+    "stock":100,
+    "price":58000.00,
+    "category":"Phones"
+},
+{
+"pid":103,
+    "pname":"IPhone 13",
+    "stock":100,
+    "price":45,000.00,
+    "category":"Phones"
+},
+{
+"pid":104,
+    "pname":"Apple MacBook Air 14in ",
+    "stock":150,
+    "price":75000.00,
+    "category":"Laptops"
+},
+{
+"pid":105,
+    "pname":"Nikon D3500 ",
+    "stock":150,
+    "price":25300.00,
+    "category":"Camera"
+},
+{
+"pid":106,
+    "pname":"Apple Watch Series 7 ",
+    "stock":150,
+    "price":65000.00,
+    "category":"Watch"
+},
+{
+"pid":107,
+    "pname":"Realme GT Neo 2 pro ",
+    "stock":800,
+    "price":26500.00,
+    "category":"Phones"
+},
+{
+"pid":108,
+    "pname":"Scull Candy Headphone",
+    "stock":800,
+    "price":15000.00,
+    "category":"Headphones"
+},
+{
+"pid":109,
+    "pname":"Scull Candy TWS Buds 1",
+    "stock":800,
+    "price":20,000.00,
+    "category":"TWS"
+}
+]
+
+*********DEMO DISPLAY PHOTO*********
+https://crankwheel.com/uploads/2019/06/12/CW_How%20to%20deliver%20the%20perfect%20instant%20online%20product%20demo.jpg
+
+

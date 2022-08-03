@@ -1,0 +1,47 @@
+<div id="hw">
+<div class="card">
+    <div class="row">
+        <div class="col-md-8 cart">
+            <div class="title">
+                <div class="row">
+                    <div class="col">
+                        <h4><b>Orders</b></h4>
+                    </div>
+                    <div style="font-weight: bold;" class="col align-self-center text-right text-muted">{{item.length}} items</div>
+                </div>
+            </div>
+            <div class="row border-top border-bottom">
+                <div class="row main align-items-center" *ngFor="let i of item">
+                    <div class="col-2"><img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/51tZRD62i8L._AC_UL604_SR604,400_.jpg"></div>
+                    <div class="col">
+                        <div class="row" style="font-weight: bold;">{{i.pname}}</div>
+                        <div class="row text-muted">{{i.category}}</div>
+                    </div>
+                    <div class="col">1 pc.</div>
+                    <div class="col">{{i.price | currency:"INR"}}</div>
+                </div>
+            </div>
+            
+            <div style="cursor: pointer ; font-size: larger; font-weight: 400;" class="back-to-shop"><a (click)="backToDashboard()">&leftarrow;&nbsp;Back to Dashboard</a></div>
+        </div>
+        <div class="col-md-4 summary">
+            <div>
+                <h5><b>Summary</b></h5>
+            </div>
+            <hr>
+            <div class="row">
+            </div>
+            <div>
+                <p><span style="font-weight: bold;">Order ID :</span> {{order.oid}}</p>
+                    
+                <p><span style="font-weight: bold;">Date : </span> {{order.date}}
+                </p> 
+            </div>
+            <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                <div class="col" style="font-weight: bold;">TOTAL PRICE</div>
+                <div class="col text-right">{{order.totalprice | currency:"INR"}}</div>
+            </div> 
+        </div>
+    </div>
+</div>
+</div>

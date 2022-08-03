@@ -1,0 +1,155 @@
+Products-
+ {
+        "pid": 101,
+        "pname": "Park Avenue",
+        "stock": 25,
+        "price": 2000.0,
+        "category": "Unisex"
+    },
+    {
+        "pid": 102,
+        "pname": "Axe Signature",
+        "stock": 20,
+        "price": 300.0,
+        "category": "Male"
+    },
+    {
+        "pid": 103,
+        "pname": "Calvin Klein",
+        "stock": 30,
+        "price": 3000.0,
+        "category": "Male"
+    },
+    {
+        "pid": 104,
+        "pname": "Wild Stone Code",
+        "stock": 25,
+        "price": 3000.0,
+        "category": "Male"
+    },
+    {
+        "pid": 105,
+        "pname": "Engage",
+        "stock": 20,
+        "price": 200.0,
+        "category": "Female"
+    },
+    {
+        "pid": 106,
+        "pname": "Denver",
+        "stock": 35,
+        "price": 350.0,
+        "category": "Unisex"
+    },
+    {
+        "pid": 107,
+        "pname": "Fogg",
+        "stock": 50,
+        "price": 150.0,
+        "category": "Male"
+    }
+    
+Users - 
+{
+	"userId":10001,
+	"username":"Mark Herman",
+	"email":"mark@email.com",
+	"password":"mark@1234",
+	"phone_number":"5674891283"
+}
+{
+	"userId":10002,
+	"username":"John Adler",
+	"email":"john@mail.com",
+	"password":"john@1234",
+	"phone_number":"6582391539"
+}
+{
+	"userId":10003,
+	"username":"Karl Marx",
+	"email":"karl@mail.com",
+	"password":"karl@1234",
+	"phone_number":"4756197312"
+}
+{
+	"userId":10004,
+	"username":"Advil Jackson",
+	"email":"advil@mail.com",
+	"password":"advil@1234",
+	"phone_number":"4756198674"
+}
+{	
+	"userId":10005,
+	"username":"Florence Smith",
+	"email":"florence@mail.com",
+	"password":"florence@1234",
+	"phone_number":"8790174213"
+}
+{	
+	"userId":10006,
+	"username":"Camela Lopez",
+	"email":"camela@mail.com",
+	"password":"camela@1234",
+	"phone_number":"5641348346"
+}
+Address - 
+{
+    "aid":1001,
+    "houseno":670,
+    "street":"AB Street",
+    "city":"Ichapur",
+    "state":"West Bengal",
+    "pin":743144,
+    "uid":10001
+}
+{
+    "aid":1002,
+    "houseno":570,
+    "street":"ABC Street",
+    "city":"Barrackpore",
+    "state":"West Bengal",
+    "pin":730986,
+    "uid":10001
+}
+{
+    "aid":1003,
+    "houseno":140,
+    "street":"XY Street",
+    "city":"Sodepur",
+    "state":"West Bengal",
+    "pin":745609,
+    "uid":10002
+}
+{
+    "aid":1004,
+    "houseno":140,
+    "street":"XYZ Street",
+    "city":"Dumdum",
+    "state":"West Bengal",
+    "pin":700031,
+    "uid":10002
+}
+{
+    "aid":1005,
+    "houseno":270,
+    "street":"PQ Street",
+    "city":"Darjeeling",
+    "state":"West Bengal",
+    "pin":798702,
+    "uid":10003
+}
+{
+    "aid":1006,
+    "houseno":290,
+    "street":"PQR Street",
+    "city":"Sikkim",
+    "state":"West Bengal",
+    "pin":799990,
+    "uid":10003
+}
+
+
+
+
+
+

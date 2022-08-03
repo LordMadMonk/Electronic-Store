@@ -1,0 +1,10 @@
+package main.java.com.ibm.repo;
+
+import java.util.List;
+
+public class OrderRepository extends JpaRepository<Order, Integer> {
+	
+	@Query("FROM Order Where user_id=uid")
+	List<Order> findAllByUser(int uid);
+
+}

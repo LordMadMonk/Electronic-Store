@@ -1,0 +1,6 @@
+<div class="d-flex justify-content-center align-items-center container">
+    <div class="d-flex card text-center" *ngFor="let c of coupons;let i = index">
+        <h1 (click)="selectCoup(i)">{{c.discount}}% OFF</h1>
+        <div class="mt-4" ><small>With Code : {{c.cname}}</small></div>
+    </div>
+</div>

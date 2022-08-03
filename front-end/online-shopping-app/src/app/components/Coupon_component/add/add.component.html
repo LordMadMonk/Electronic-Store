@@ -1,0 +1,24 @@
+<div style="margin-left: 30px;
+margin-right: 30px;
+margin-bottom: 20px;
+padding-bottom: 20px;">
+
+<form (ngSubmit)="addCoupon()" class="was-validated" #addForm="ngForm">
+    <div class="mb-3 mt-3">
+      <label for="cid" class="form-label">Coupon ID:</label>
+      <input type="text" class="form-control" id="cid" placeholder="Enter Coupon Code" name="cid" required pattern="[0-9]{3,}" [(ngModel)]="coupon.cid" #cid="ngModel">
+      <div class="invalid-feedback" *ngIf="cid.dirty">Please fill out this field.</div>
+    </div>
+    <div class="mb-3">
+        <label for="cname" class="form-label">Coupon Name:</label>
+        <input type="text" class="form-control" id="cname" placeholder="Enter Coupon Name" name="cname" required pattern="[a-zA-Z0-9]{3,}" [(ngModel)]="coupon.cname" #cname="ngModel">
+        <div class="invalid-feedback" *ngIf="cname.dirty">Please fill out this field.</div>
+    </div>
+    <div class="mb-3">
+        <label for="discount" class="form-label">Discount Value:</label>
+        <input type="text" class="form-control" id="discount" placeholder="Enter Discount Value" name="discount" required pattern="[0-9]{1,}" [(ngModel)]="coupon.discount" #discount="ngModel">
+        <div class="invalid-feedback" *ngIf="discount.dirty">Please fill out this field.</div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!addForm.valid">Submit</button>
+</form>
+</div>

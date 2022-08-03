@@ -1,0 +1,41 @@
+<div style="margin-left: 30px;
+margin-right: 30px;
+margin-bottom: 20px;
+padding-bottom: 20px;">
+
+<form (ngSubmit)="update()" class="was-validated" #addForm="ngForm">
+    <div class="mb-3 mt-3">
+        <label class="form-label">Product ID</label>
+        <input class="form-control" placeholder="Enter Product Id" required [(ngModel)]="product.pid"
+            [ngModelOptions]="{standalone: true}" pattern="[0-9]{2,}" #id="ngModel" disabled>
+        <div class="invalid-feedback" *ngIf="id.dirty">Please provide valid Product ID</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Product Name</label>
+        <input class="form-control" placeholder="Enter Product name" required [(ngModel)]="product.pname"
+            [ngModelOptions]="{standalone: true}" disabled #pname="ngModel">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Product Price</label>
+        <input class="form-control" placeholder="Enter Product price" required [(ngModel)]="product.price"
+            [ngModelOptions]="{standalone: true}" pattern="[0-9]{2,}" #price="ngModel" disabled>
+        <div class="invalid-feedback" *ngIf="price.dirty"> Please provide valid Pricing
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Product Stock</label>
+        <input class="form-control" placeholder="Enter Product stock" required [(ngModel)]="product.stock"
+            [ngModelOptions]="{standalone: true}" pattern="[0-9]{1,}" #stock="ngModel">
+        <div class="invalid-feedback" *ngIf="stock.dirty"> Please provide valid stock
+        </div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Product Category</label>
+        <input class="form-control" placeholder="Enter Product category" required [(ngModel)]="product.category"
+            [ngModelOptions]="{standalone: true}" #stock="ngModel"disabled>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary" [disabled]="!addForm.valid">Save</button>
+    </div>
+</form></div>

@@ -1,0 +1,26 @@
+<div class="card" *ngIf="order.length !== 0">
+    <div class="col-md-8 cart">
+        <div class="title">
+            <div class="col">
+                <h4><b>List of Orders</b></h4>
+            </div>
+        </div>
+    </div>
+    <div id="hi" class="row border-top border-bottom">
+        <div id="hola" class="row main align-items-center">
+            <h4 class="col" id="hello">Order ID</h4>
+            <h4 class="col">Date</h4>
+            <h4 class="col">Total Price</h4>
+            <h4 class="col">Order Status</h4>
+        </div>
+        <div style="cursor: pointer" class="row main align-items-center" *ngFor="let ord of order; let i= index" (click)="fetchOrder(i)">
+            <div class="col" id="hello">{{ord.oid}}</div>
+            <div class="col">{{ord.date}}</div>
+            <div class="col">{{ord.totalprice | currency:"INR"}}</div>
+            <div class="col">{{ord.status}}</div>
+        </div>
+    </div>
+</div>
+<div *ngIf="order.length === 0">
+    <h1>You Don't have any orders to view yet</h1>
+</div>

@@ -1,0 +1,12 @@
+hibernate_sequence
+added_products			--- ShoppingCart + List<Product> | (M-M)
+address 				--- Address.java
+coupons				--- Coupon.java
+ordered_products			--- Order.java + List<Product> | (M-M)
+orders				--- Order.java
+products				--- Product.java
+shopping_cart			--- ShoppingCart.java
+used_coupons			---Coupon.java + List<User> (M-M)
+users				--- User.java
+
+

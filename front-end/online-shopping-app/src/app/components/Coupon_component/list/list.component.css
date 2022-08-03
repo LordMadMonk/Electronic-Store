@@ -1,0 +1,24 @@
+.card {
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #C7B198;
+    border: none;
+    color: #630606;
+    height: 350px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 200px;
+}
+
+.card h1 {
+    font-size: 48px;
+    margin-bottom: 0px
+}
+
+.card span {
+    font-size: 28px
+}

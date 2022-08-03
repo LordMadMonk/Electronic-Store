@@ -1,0 +1,34 @@
+<div class="card">
+    <div class="row">
+        <div class="col-md-8 cart">
+            <div class="title">
+                <div class="row container-fluid">
+                    <div class="col">
+                        <h4><b>Your Addresses</b></h4>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn-primary" (click)="redirect()">Add Another address</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="hi" class="row border-top border-bottom">
+        <div id="hola" class="row main align-items-center">
+            <div class="col">Address id</div>
+            <div class="col" >House No</div>
+            <div class="col" >Street</div>
+            <div class="col">City</div>
+            <div class="col">State</div>
+            <div class="col">Pin</div>
+        </div>
+        <div class="row main align-items-center" *ngFor="let a of address;let i = index">
+            <div class="col">{{a.addressId}}</div>
+            <div class="col">{{a.houseNo}}</div>
+            <div class="col" >{{a.street}}</div>
+            <div class="col">{{a.city}}</div>
+            <div class="col">{{a.state}}</div>
+            <div class="col">{{a.pincode}}</div>
+        </div>
+    </div>
+</div>

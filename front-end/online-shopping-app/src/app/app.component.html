@@ -1,0 +1,136 @@
+<!--NAVBAR-->
+
+<header class="head">
+  <nav class="navbar navbar-expand-lg navbar-light  inline-flex" style="background-color: #11324D;">
+    <a class="navbar-brand" [routerLink]="['']" style="font-family: 'Rubik', sans-serif;font-size: 25px; color: #F7F7F7;">Electronics <span> Store</span> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item "> <a class="nav-link" [routerLink]="['']">Home <span
+              class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" *ngIf="!status" [routerLink]="['register']">Register</a> </li>
+        <li class="nav-item"> <a class="nav-link" *ngIf="!status" [routerLink]="['login']">Login</a> </li>
+        <li class="nav-item"> <a class="nav-link" [routerLink]="['list']">Products</a> </li>
+        <li class="nav-item">
+          <a class="nav-link" type="button" [routerLink]="['search']">Search</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item" id="admin" *ngIf="status && admin">
+          <div ngbDropdown class="d-inline-block">
+            <button type="button" style="color: greenyellow;" class="btn btn-outline-dark"id="dropdownBasic1" ngbDropdownToggle>Admin</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem [routerLink]="['addProduct']">Add Product</button>
+              <button ngbDropdownItem [routerLink]="['addCoupon']">Add Coupon</button>
+              <button ngbDropdownItem [routerLink]="['listCoupon']">List Coupon</button>
+              <button ngbDropdownItem [routerLink]="['adminpanel']">Dash Board</button>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item" id="regular" *ngIf="status">
+          <div ngbDropdown class="d-inline-block">
+
+            <button type="button" class="btn button" id="dropdownBasic1" ngbDropdownToggle> <a>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDmPYmQBvDzKEu5trlzyQ-vcWScHZhuWzag&usqp=CAU"
+                  width="40" height="40" class="rounded-circle">
+              </a></button>
+            <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+              <button ngbDropdownItem *ngIf="!admin" (click)="goToCart()">Cart</button>
+              <button ngbDropdownItem *ngIf="!admin" [routerLink]="['loginsuccess']">Dashboard</button>
+              <button ngbDropdownItem (click)="logout()">Logout</button>
+            </div>
+          </div>
+        </li>
+
+
+
+      </ul>
+    </div>
+  </nav>
+</header>
+<div>
+  <router-outlet></router-outlet>
+</div>
+<!--
+<hr>
+<br>
+
+
+-->
+
+<!-- Footer -->
+<!-- Section: Links  -->
+<!-- <section class="container-fluid"> -->
+  <footer id="footer" class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="container-fluid">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>Team Name
+                    </h6>
+                    <p>
+                        We are a electronic destination for the contemporary Indian who seeks authentic brand experiences.
+                        As the
+                        official online platform for brands like Apple, Samsung, Lenovo, Skull Candy,
+                        Nikon, HP, 
+                        Dell, Asus, Realme, we not only showcase the largest width of
+                        merchandise for these brands but also offer the latest in-season products.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-5 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4 text-center">
+                        Products
+                    </h6>
+                    <p class="text-center">
+                        <button ngbDropdownItem [routerLink]="['list']" class="text-reset">All Products</button>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-5 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contact
+                    </h6>
+                    <p>Contact Address of the team</p>
+                    <p>
+
+                      demomailformyproject@gmail.com
+                    </p>
+                    <p> +91 contact number</p>
+                    <p> +91 contact number</p>
+                    <p> +91 contact number</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="http://localhost:4200/">WEBSITE NAME</a>
+    </div>
+    <!-- Copyright -->
+</footer>

@@ -1,0 +1,47 @@
+<form id="hola" (ngSubmit)="add()" class="was-validated" #addForm="ngForm" style="margin-top:50px">
+    <div class="mb-3 mt-3">
+        <label class="form-label">Address Id:</label>
+        <input class="form-control" placeholder="Enter Address Id" required value="num" [(ngModel)]="address.aid"
+            [ngModelOptions]="{standalone: true}" pattern="[0-9]{1,}" #aid="ngModel">
+        <div class="invalid-feedback" *ngIf="aid.dirty">Please provide Address Id.</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">User Id:</label>
+        <input class="form-control" placeholder="Enter User Id" required value="user.userId" [(ngModel)]="address.uid"
+            [ngModelOptions]="{standalone: true}" pattern="[0-9]{2,}" #uid="ngModel">
+        <div class="invalid-feedback" *ngIf="uid.dirty">Please provide User Id.</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">HouseNo:</label>
+        <input class="form-control" placeholder="Enter House No" required [(ngModel)]="address.houseno"
+            [ngModelOptions]="{standalone: true}" pattern="[0-9]{2,}" #houseno="ngModel">
+        <div class="invalid-feedback" *ngIf="houseno.dirty">Please provide House No.</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Street:</label>
+        <input class="form-control" placeholder="Enter Street" required [(ngModel)]="address.street"
+            [ngModelOptions]="{standalone: true}" pattern="[.*/ a-zA-Z 0-9 ]{3,}" #street="ngModel">
+        <div class="invalid-feedback" *ngIf="street.dirty">Please provide Street.</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">City:</label>
+        <input class="form-control" placeholder="Enter City" required [(ngModel)]="address.city"
+            [ngModelOptions]="{standalone: true}" pattern="[a-zA-Z ]{3,}" #city="ngModel">
+        <div class="invalid-feedback" *ngIf="city.dirty">Please provide City.</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">State:</label>
+        <select class="form-control" name="state" required [(ngModel)]="address.state">
+            <option *ngFor="let s of state" [value]="s">{{s}}</option>
+        </select>
+        <div class="invalid-feedback">Please select a state.</div>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Pincode:</label>
+        <input class="form-control" placeholder="Enter Pincode" required [(ngModel)]="address.pin"
+            [ngModelOptions]="{standalone: true}" pattern="[0-9]{6}" #pin="ngModel">
+        <div class="invalid-feedback" *ngIf="pin.dirty">Please provide Pincode.</div>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="!addForm.valid">Save</button>
+  </form>
+ 

@@ -1,0 +1,13 @@
+package com.ibm.entity;
+
+
+/** This class represents Order.
+ * 
+ * @author DEBARGHYA DUTTA
+ *
+ */
+@Entity
+@Table(name="Orders")
+public class Order {
+	
+}
