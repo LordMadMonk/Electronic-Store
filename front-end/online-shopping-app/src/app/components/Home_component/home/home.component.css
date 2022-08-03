@@ -31,6 +31,7 @@ header{
 }
 
 .banner-left {
+    margin-left: 100px;
     text-align: left;
     width: 65%;
     margin: 0;
@@ -61,12 +62,12 @@ margin-left: 700px;
 
 }
 
-/* .banner-left p {
+.banner-left p {
     color: #fff;
     letter-spacing: 0.5px;
     line-height: 20px;
 	margin-bottom:30px;
-} */
+}
 
 .custom-btn {
     width: 100%;

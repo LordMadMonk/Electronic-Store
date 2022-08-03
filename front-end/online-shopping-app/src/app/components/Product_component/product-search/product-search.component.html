@@ -11,9 +11,9 @@
     <form (ngSubmit)="searchbyrange()" #addForm="ngForm">
         <div class="mb-3 mt-3" style="margin-left: 500px;">
             <label for="customRange2" class="form-label">Enter Maximum Price </label>
-            <input type="range" class="form-range" id="price" name="highp" min="0" max="10000" [(ngModel)]="highp"
+            <input type="range" class="form-range" id="price" name="highp" min="0" max="100000" [(ngModel)]="highp"
                 #price="ngModel" oninput="this.form.amountInput.value=this.value" />
-            <input type="number" name="amountInput" min="0" max="10000" value="0"
+            <input type="number" name="amountInput" min="0" max="100000" value="0"
                 oninput="this.form.amountRange.value=this.value" />
             <input type="submit">
         </div>
